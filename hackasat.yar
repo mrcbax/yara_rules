@@ -1,8 +1,13 @@
 rule flag_regex {
 
-strings:
-$flag = /flag\{\w+:[a-zA-Z0-9\-\_]+\}/
+  meta:
+    author = "Chad Baxter"
+    description = "matches on the Hack-a-Sat CTF's flag format
 
-condition:
-any of them
+  strings:
+    $flag = /flag\{\w+:[a-zA-Z0-9\-\_]+\}/
+
+  condition:
+    any of them
+
 }
