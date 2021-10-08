@@ -36,7 +36,7 @@ rule teamtnt_hashes {
       $dummy = ""
 
     condition:
-      hash.sha256(0, filesize) ==
+      hash.sha256(0, filesize) == // begin shell scripts
         "0085bf33d4e4e051a15a1bd70636055d709aeef79025080afc7a8148ece55339" or
       hash.sha256(0, filesize) ==
         "024445ae9d41915af25a347e47122db2fbebb223e01acab3dd30de4b35464965" or
@@ -109,6 +109,33 @@ rule teamtnt_hashes {
       hash.sha256(0, filesize) ==
         "f05155c8be6efbd94c0ec891494aa064a93def34b122bd70b4d225ea13fffff9" or
       hash.sha256(0, filesize) ==
-        "fa2a7374219d10a4835c7a6f0906184daaffd7dec2df954cfa38c3d4dd62d30d"
+        "fa2a7374219d10a4835c7a6f0906184daaffd7dec2df954cfa38c3d4dd62d30d" // end shell scripts
 
+      hash.sha256(0, filesize) == // begin bot source
+        "11417d4c0bac631a1967c38b421e93743b684128ee26d92da1344ed5bd449f13" or
+      hash.sha256(0, filesize) ==
+        "151274611ad0e0e13b5aad264605d860420952251a5ecd0a980dfef058c2c2a7" or
+      hash.sha256(0, filesize) ==
+        "4c4f51f6893b651f4794debcef2387b4478183011715e9cd2a409d08e510df01" or
+      hash.sha256(0, filesize) ==
+        "56a5d6490296e167a598bb5833d89fac813c0bc4b935a5e06b160f6a2fc0fc37" or
+      hash.sha256(0, filesize) ==
+        "6f3c979571dd2d294ba04d250abb3311b72fd1327c99ceefdbfcc3793dc2368a" or
+      hash.sha256(0, filesize) ==
+        "e0cf258b32edc5cac136c93cd6d764cd1135d6275db4da42115c872792d5a55c" or
+      hash.sha256(0, filesize) ==
+        "b6cdbfd13c09ebb82d2883c0000584d8bcb747d116df9bc0be79d545f376a2b3" or
+      hash.sha256(0, filesize) ==
+        "fe3c5c4f94b90619f7385606dfb86b6211b030efe19b49c12ead507c8156507a" // end bot source
+
+      hash.sha256(0, filesize) == // begin bot binaries
+        "33c8591edd61c6e968e727683a63fba0352b5b6b59a0b3005628c38848dd7dd3" or
+      hash.sha256(0, filesize) ==
+        "84e02d137dd8ff7b2ca3624a6f84354f07c5850262b2d154feb7aada0b2e2267" or
+      hash.sha256(0, filesize) ==
+        "b6f0203ddf24cd04489cbbed24059d84504a2ba904659681ad05b7d2c130d4b5" or
+      hash.sha256(0, filesize) ==
+        "e2b77926b28f377a5153a8f3d979a74315c1c6f35f3ca35881b9554e4dbc73a0" or
+      hash.sha256(0, filesize) ==
+        "95809d96f85e1571a3120c7c09a7f34fa84cb5902ad5172398dc2bb0ff1dd24a" // end bot binaries
 }
