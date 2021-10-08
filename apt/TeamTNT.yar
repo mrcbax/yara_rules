@@ -12,6 +12,7 @@ rule teamtnt_common_strings {
       $kill_string = "HaXXoRsMoPPeD" //set this as your hostname to stop all TeamTNT scripts early in their execution.
       $username = "hilde"
       $password = "/BnKiPmXA2eAQ" //crypt(3)
+      $email = "hilde@teamtnt.red"
       $domain0 = "chimaera.cc"
       $domain1 = "teamtnt.red"
       $domain2 = "ipv4.icanhazip.com"
